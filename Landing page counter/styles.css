@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.container {
+    display: grid;
+    grid-template: 500px 50px / repeat(12, 1fr);
+    background: chartreuse;
+    font-family: 'Montserrat', sans-serif;
+    grid-gap: 1px;
+}
+
+.container>div {
+    grid-column: 1 / -1;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #43C6AC;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.text {
+    font-size: 2.5em;
+    color: #fff;
+}
+
+.counter {
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+}
+
+.footer {
+    color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #191654, #43C6AC);
+}
+
+.footer a {
+    text-decoration: none;
+    color: chartreuse;;
+}
+
+.footer a:hover {
+    text-decoration:underline;
+}
+
+@media all and (max-width : 880px){
+    .container{
+        grid-template: 1fr 50px / repeat(12, 1fr);
+    }
+    .container .timer {
+        flex-direction: column;
+    }
+}
