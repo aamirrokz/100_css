@@ -50,6 +50,11 @@ background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, F
     text-decoration:underline;
 }
 
+.heart-beat {
+    color: crimson;
+    animation: beats 1s ease-in-out infinite alternate;
+}
+
 @media all and (max-width : 880px){
     .container{
         grid-template: 1fr 50px / repeat(12, 1fr);
@@ -58,3 +63,16 @@ background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, F
         flex-direction: column;
     }
 }
+
+@keyframes beats {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2)
+    }
+}
+
+/* @keyframes beats {
+    to{transform: 1.3}
+} */
