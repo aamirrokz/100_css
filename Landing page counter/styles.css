@@ -1,10 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');
+
+body {
+    margin: 0;
+    padding: 0;
+}
 
 .container {
     display: grid;
     grid-template: 500px 50px / repeat(12, 1fr);
     background: chartreuse;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     grid-gap: 1px;
 }
 
@@ -29,12 +34,12 @@ background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, F
 
 .counter {
     font-size: 5em;
-    color: #fff;
+    color: crimson;
     text-align: center;
 }
 
 .footer {
-    color: chartreuse;
+    color: #0fb9b1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +48,7 @@ background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, F
 
 .footer a {
     text-decoration: none;
-    color: chartreuse;;
+    color: #0fb9b1;
 }
 
 .footer a:hover {
